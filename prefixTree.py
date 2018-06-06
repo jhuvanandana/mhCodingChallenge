@@ -92,7 +92,11 @@ if __name__ == "__main__":
     pTree.addWord('d')
     pTree.addWord('bcd')
     
-    ## print all complete words with frequency > k (incl. self-matches)
-    k = 3
+    ## Medius Health Coding Challenge - JH
+    ## assumption 1: self-matches included in frequency count
+    ## assumption 2: returns list of complete words (root to terminal node)
+    ## which satisfy frequency requirements
+
+    k = 2
     print('MH Coding Challenge\nPrint all patterns with freq > %d'%k)
     print(pTree.getAllWithFreq(k))
